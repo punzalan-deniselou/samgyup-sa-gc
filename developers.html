@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samgyeopsal sa Gordon College</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-color:#f8f5f0;
+            color:#333;
+        }
+
+        header{
+            background:#8B0000;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        header h1{
+            font-size:2.5rem;
+        }
+
+        nav{
+            background:#5a0000;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#ffd700;
+        }
+
+        .container{
+            width:90%;
+            max-width:1100px;
+            margin:30px auto;
+        }
+
+        .menu-title{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        .menu-category{
+            margin-bottom:40px;
+        }
+
+        .menu-category h2{
+            background:#8B0000;
+            color:white;
+            padding:12px;
+            border-radius:8px;
+            margin-bottom:15px;
+        }
+
+        .menu-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .menu-item{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 3px 8px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .menu-item:hover{
+            transform:translateY(-5px);
+        }
+
+        .menu-item h3{
+            color:#8B0000;
+            margin-bottom:10px;
+        }
+
+        .price{
+            font-size:1.2rem;
+            font-weight:bold;
+            color:#228B22;
+            margin-top:10px;
+        }
+
+        footer{
+            background:#8B0000;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Samgyup sa GC</h1>
+    <p>Unlimited Korean BBQ Experience</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+    <div class="menu-title">
+        <h2>Our Menu</h2>
+        <p>Fresh meats, delicious side dishes, and refreshing drinks.</p>
+    </div>
+
+    <!-- Pork Sets -->
+    <div class="menu-category">
+        <h2>Pork Sets</h2>
+
+        <div class="menu-grid">
+
+            <div class="menu-item">
+                <h3>Classic Samgyupsal</h3>
+                <p>Premium sliced pork belly marinated in Korean spices.</p>
+                <div class="price">₱299</div>
+            </div>
+
+            <div class="menu-item">
+                <h3>Spicy Pork Belly</h3>
+                <p>Marinated pork belly with spicy gochujang sauce.</p>
+                <div class="price">₱329</div>
+            </div>
+
+            <div class="menu-item">
+                <h3>Garlic Pork Belly</h3>
+                <p>Fresh pork belly infused with roasted garlic flavor.</p>
+                <div class="price">₱319</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Beef Sets -->
+    <div class="menu-category">
+        <h2>Beef Sets</h2>
+
+        <div class="menu-grid">
+
+            <div class="menu-item">
+                <h3>Beef Bulgogi</h3>
+                <p>Thinly sliced beef marinated in sweet soy sauce.</p>
+                <div class="price">₱399</div>
+            </div>
+
+            <div class="menu-item">
+                <h3>Spicy Beef</h3>
+                <p>Premium beef with a spicy Korean kick.</p>
+                <div class="price">₱429</div>
+            </div>
+
+            <div class="menu-item">
+                <h3>Garlic Beef</h3>
+                <p>Beef slices seasoned with garlic and herbs.</p>
+                <div class="price">₱419</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Side Dishes -->
+    <div class="menu-category">
+        <h2>Side Dishes</h2>
+
+        <div class="menu-grid">
+
+            <div class="menu-item">
+                <h3>Kimchi</h3>
+                <p>Traditional Korean fermented cabbage.</p>
+                <div class="price">₱60</div>
+            </div>
+
+            <div class="menu-item">
+                <h3>Korean Rice</h3>
+                <p>Steamed rice served fresh.</p>
+                <div class="price">₱40</div>
+            </div>
+
+            <div class="menu-item">
+                <h3>Fish Cake</h3>
+                <p>Authentic Korean fish cake side dish.</p>
+                <div class="price">₱80</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Drinks -->
+    <div class="menu-category">
+        <h2>Drinks</h2>
+
+        <div class="menu-grid">
+
+            <div class="menu-item">
+                <h3>Pocari Sweat</h3>
+                <p>Refreshing isotonic drink.</p>
+                <div class="price">₱60</div>
+            </div>
+
+            <div class="menu-item">
+                <h3>Korean Iced Tea</h3>
+                <p>Sweet and refreshing tea.</p>
+                <div class="price">₱70</div>
+            </div>
+
+            <div class="menu-item">
+                <h3>Soft Drinks</h3>
+                <p>Choice of Coke, Sprite, or Royal.</p>
+                <div class="price">₱50</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Samgyup sa GC | Gordon College Sample Project</p>
+</footer>
+
+</body>
+</html>
